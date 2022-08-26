@@ -1,0 +1,82 @@
+body {
+  /* background-color: rgb(95, 191, 246); */
+background-color: rgb(248, 248, 94)
+}
+
+/* BORDA AO REDOR  */
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  /* aredondar as bordas */
+  border-radius: 15px;
+  width: 30%;
+  color:white;
+}
+/* contorno LARANJA da borda */
+.fieldset {
+  border: 3px solid orange;
+}
+
+/* Legenda da borda */
+.legend {
+  /*  */
+  border: 3px solid orange;
+  padding: 10px;
+  text-align: center;
+  background-color: orange;
+  border-radius: 5px;
+ 
+}
+
+.inputbox {
+    position: relative;
+}
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.labelinput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelinput,
+.inputUser:valid ~ .labelinput {
+    top:-20px;
+    font-size: 12px;
+    color: burlywood
+
+}
+
+#data-nascimento {
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#submit {
+    background-color: orange;
+    border: none;
+    padding: 15px;
+    color: white;
+    width:100%;
+    font-size: 15px;
+    cursor: pointer;
+
+}
